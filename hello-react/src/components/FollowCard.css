@@ -1,0 +1,77 @@
+.followCard {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 330px;
+    color: #ddd;
+}
+
+/* HEADER------------------------------------------- */
+.followCard-header {
+    display: flex;
+}
+
+.followCard-header img {
+    height: 60px;
+    border-radius: 50%;
+}
+.followCard-header div {
+    display: grid;
+    place-content: center;
+    padding: 0 10px;
+}
+.followCard-header div strong {
+    display: block;
+}
+.followCard-header div span {
+    display: block;
+    color: #999;
+}
+
+/* ASIDE-------------------------------------------- */
+.followCard-aside {
+    display: grid;
+    place-content: center;
+    margin-left: auto;
+}
+.unfollowing-style {
+    background-color: #ddd;
+    border: none;
+    border-radius: 40px;
+    height: 40px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease;
+}
+.unfollowing-style:hover {
+    cursor: pointer;
+    background-color: #999;
+}
+.following-style {
+    background-color: #222;
+    border: 2px solid #999;
+    border-radius: 40px;
+    color: #ddd;
+    height: 40px;
+    width: 95px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease;
+}
+.following-style:hover {
+    cursor: pointer;
+    background-color: #262626;
+    border-color: #d33;
+    color: #d33;
+}
+.following-style:hover > .text-unfollow {
+    display: block;
+}
+.following-style:hover > .text-following {
+    display: none;
+}
+
+.text-unfollow {
+    display: none;
+}
